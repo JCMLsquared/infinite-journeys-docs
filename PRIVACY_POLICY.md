@@ -4,7 +4,7 @@ title: Privacy Policy for Infinite Journeys
 
 # Privacy Policy for Infinite Journeys
 
-**Last updated:** September 2, 2026
+**Last updated:** September 3, 2026
 
 This privacy policy applies to the Infinite Journeys Android app (package name `com.bcgames.infinitejourneys`). It does not apply to Infinite Bedtime Stories or any other app.
 
@@ -22,7 +22,7 @@ The app stores, in the app’s private storage on your device:
 
 - Character roster (up to 10), including name, age, gender, species, appearance details, and generated portrait images
 - Your selected narrator voice
-- Your confirmation that you are 13 or older
+- Your first-run LaunchConsentCard acceptance and a separate 13+ age attestation (see section 7)
 - An app-generated player ID (a random UUID in `player-id.txt`)
 - A local copy of your token balance (`wallet-local.json`)
 
@@ -44,7 +44,7 @@ Internet access is required to generate new chapters, portraits, live narration,
 
 A forwarded generation request may include:
 
-- Character details you entered (name, appearance, species, and age **only if it is a whole number 18 or greater**; under-18 or non-numeric age is not sent)
+- Character details you entered (name, appearance, species, and age **only if it is a whole number 18 or greater** from the **Age (18+)** field). Blank and under-18 values are rejected and do **not** leave the device for Save, Begin, portrait, or story prompts
 - Genre and story choices you pick
 - Prior chapter text needed to continue the story
 - Generated portrait or scene images used as references for later images or video
@@ -80,9 +80,15 @@ Google Play services on your device are subject to Google’s privacy policy: ht
 
 ## 7. Children
 
-Infinite Journeys is **not** directed at children under 13. It is not a Google Play Families app.
+Infinite Journeys is **not** directed at children under 13. The player audience is 13+. It is not a Google Play Families app.
 
-Before you can use the app, you must confirm you are 13 or older (currently a first-run checkbox stored on the device). Character age sent to generation providers must be a whole number **18 or greater**. Values that are blank, under 18, or not a number of 18+ are **not** sent, including for portraits and scene images. Do not use the app to create or generate images of children.
+Before you can use the app, you must complete a two-step first-run gate. Both confirmations are stored on the device.
+
+1. **LaunchConsentCard on Home.** A consent card on the Home screen with the button **I am 13+ and I agree**. There is no Cancel control. **PRESS START** does nothing until you accept. Accepting covers that you are 13 or older; that characters and generated likenesses are 18+; that chapter requests go to the Infinite Journeys server and then to third-party AI; and that content is PG-13. The card links to this Privacy Policy and to the Terms of Service. In-app Privacy opens a Custom Tab to https://jcmlsquared.github.io/infinite-journeys-docs/. Terms stay in the app.
+
+2. **13+ age attestation.** After you accept the consent card, a separate 13+ age attestation dialog is shown. You must confirm you are 13 or older. That attestation is stored on the device so it survives the Back button and process death (the app being killed and restarted).
+
+The character age field is labeled **Age (18+)**. Only whole numbers 18 or greater leave the device for Save, Begin, portrait, and story prompts. Blank and under-18 values are rejected and are **not** sent to generation providers, including for portraits and scene images. Do not use the app to create or generate images of children.
 
 If you believe a child under 13 has used the app, contact **jcrawford101381@gmail.com**.
 
